@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/47f634f91c.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <style>
+            *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins',sans-serif;
+            box-sizing: border-box;
+            }
+            nav{
+                position: absolute;
+                padding-top: 20px;
+                padding-left: 50px;
+                padding-right: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            nav ul li{
+                display: inline-block;
+                list-style: none;
+                margin: 10px 20px;
+            }
+            nav i{
+                font-size: 30px;
+                color: white;
+                padding-right: 40px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+            }
+            nav ul li a:hover{
+                padding: 10px;
+                border: 2px solid white;
+                border-radius: 20px;
+                font-size: 20px;
+            }
+            .bod{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url('photos/back.jpg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .wrapper{
+                width: 430px;
+                background: transparent;
+                border: 2px solid white;
+                backdrop-filter: blur(25px);
+                box-shadow: 0 0 10px rgba(0,0,0,.2);
+                color: white;
+                border-radius: 2rem;
+                padding: 30px 40px;
+
+            }
+            .wrapper h1{
+                font-size: 40px;
+                text-align: center;
+            }
+            .wrapper .ip-box{
+                width: 100%;
+                height: 50px;
+                margin: 30px 0;
+            }
+            .ip-box input{
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                border: 2px solid white;
+                border-radius: 40px;
+                font-size: 16px;
+                color: white;
+                padding: 20px 45px 20px 20px;
+            }
+            .ip-box input::placeholder{
+                color: white;
+            }
+            .ip-box i{
+                position: absolute;
+                padding-top: 10px;
+                font-size: 30px;
+            }
+            .rem label input{
+                accent-color: white;
+                margin-right: 3px;
+            }
+            .rem a{
+                color: white;
+                text-decoration: none;
+            }
+            .rem a:hover{
+                text-decoration: underline;
+            }
+            .wrapper .btn{
+                width: 100%;
+                height: 45px;
+                background: white;
+                border: none;
+                outline: none;
+                border-radius: 2rem;
+                font-size: 16px;
+                color: black;
+                font-weight: 600;
+            }
+            .wrapper .register-link{
+                font-size: 14.5px;
+                text-align: center;
+                margin: 20px 0 15px;
+            }
+            .register-link p a{
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .register-link p a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <nav>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <ul>
+                    <li><a  href="#"><b>Home</b></a></li>
+                    <li><a href="#"><b>About</b></a></li>
+                    <li><a href="#"><b>Project</b></a></li>
+                    <li><a  href="#"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+            <div class="bod">
+                <div class="wrapper">
+                    <form action="">
+                        <h1>Login</h1>
+                        <div class="ip-box">
+                            <input type="text" placeholder="Username" required>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="ip-box">
+                            <input type="password" placeholder="password" required>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="rem">
+                            <label for=""><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="register-link">
+                            <p>Don't have an account? <a href="#">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
